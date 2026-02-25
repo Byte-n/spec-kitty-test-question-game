@@ -13,6 +13,18 @@ No backend or accounts are required. All state lives client-side for the current
 
 ---
 
+## Clarifications
+
+### Session 2026-02-25
+
+- Q: 答题后的推进方式 → A: 先显示对错结果，再出现"继续"按钮，点击后推进至下一轮
+- Q: 换人过渡屏 → A: 无独立过渡屏，直接显示下一题，当前玩家名展示在题目页顶部
+- Q: 每局题目数量控制 → A: 主持人在开始前设定轮数；一轮 = 每位玩家各答一题；总题目数 = 轮数 × 玩家数
+- Q: 自定义题库导入/导出 → A: 支持导出（JSON 文件）和从文件导入，以实现跨设备共享
+- Q: 排行榜同分处理 → A: 同分玩家并列相同名次（如两人并列第 2，则无第 3 名）
+
+---
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 — Play a Game with the Built-In Question Bank (Priority: P1)
@@ -87,7 +99,7 @@ A family uses the game during a road trip. One person holds the phone and passes
 
 ### Edge Cases
 
-- What happens when a question bank has fewer questions than expected? → Game uses all available questions and ends early; informs the host before starting.
+- What happens when the question pool has fewer questions than rounds × players requires? → Game uses all available questions and ends early; the host is warned on the setup screen before starting.
 - What happens when only 1 player is added? → Game runs in solo mode — single player answers all questions in sequence.
 - What happens when two banks are merged and contain duplicate question text? → Duplicates are included as-is; deduplication is not required.
 - What happens when a custom bank has 0 questions? → The bank appears in the list but cannot be selected alone to start a game; a warning is shown.
@@ -107,13 +119,14 @@ A family uses the game during a road trip. One person holds the phone and passes
 - **FR-003**: The system MUST allow the host to configure between 1 and 12 players and enter a name for each.
 - **FR-004**: The system MUST prevent a game from starting if no question banks are selected or the selected banks contain zero questions in total.
 - **FR-005**: The system MUST allow the host to configure a per-question time limit with a sensible default of 30 seconds.
+- **FR-005b**: The system MUST allow the host to configure the number of rounds before starting. One round equals each player answering one question in turn order. Total questions consumed = rounds × player count. If the merged question pool has fewer questions than required, the game ends when questions run out and informs the host.
 
 **Gameplay**
 
-- **FR-006**: The system MUST display questions one at a time, clearly indicating the current player's name and turn number.
+- **FR-006**: The system MUST display questions one at a time, clearly indicating the current player's name at the top of the question screen. No separate interstitial screen is shown between players' turns.
 - **FR-007**: Each question MUST present 2–4 answer options in a randomized order.
-- **FR-008**: The system MUST show a countdown timer per question and automatically advance the turn when time expires.
-- **FR-009**: Upon answer selection or timer expiry, the system MUST reveal whether the answer was correct and update the player's score.
+- **FR-008**: The system MUST show a countdown timer per question and automatically mark the question unanswered (no score) when time expires, then display a result screen.
+- **FR-009**: Upon answer selection or timer expiry, the system MUST reveal whether the answer was correct and update the player's score. A "继续" (Continue) button then appears; the turn advances only when tapped.
 - **FR-010**: The system MUST advance turns in sequential player order (Player 1 → Player 2 → … → Player N → Player 1 → …) until all questions are exhausted.
 - **FR-011**: The system MUST randomize the order of questions drawn from the merged question pool at game start.
 
@@ -125,11 +138,13 @@ A family uses the game during a road trip. One person holds the phone and passes
 - **FR-015**: The system MUST allow users to add, edit, and delete questions within a custom bank.
 - **FR-016**: The system MUST allow users to delete an entire custom bank after a confirmation prompt.
 - **FR-017**: Custom question banks and their questions MUST be persisted locally and survive page refreshes.
+- **FR-017b**: The system MUST allow users to export any custom question bank as a JSON file for backup and sharing.
+- **FR-017c**: The system MUST allow users to import a question bank from a JSON file. If a bank with the same name already exists, the user must be prompted to rename or overwrite it. The built-in question bank format must be accepted as a valid import schema.
 
 **End of Game**
 
 - **FR-018**: After all questions are answered, the system MUST display a leaderboard showing all players ranked by total score (highest first).
-- **FR-019**: The leaderboard MUST show each player's name, score, and rank.
+- **FR-019**: The leaderboard MUST show each player's name, score, and rank. Players with equal scores share the same rank (e.g., two players tied at 2nd place means no 3rd place is shown).
 - **FR-020**: The system MUST provide a "Play Again" action that returns the host to the setup screen.
 
 **Responsive Design**
@@ -144,7 +159,7 @@ A family uses the game during a road trip. One person holds the phone and passes
 - **QuestionBank**: A named collection of questions. Has a type (built-in or custom), a name, and zero or more questions. Custom banks are user-created and locally persisted.
 - **Question**: A single quiz item belonging to a bank. Contains question text, 2–4 answer options (each with text and a correct flag).
 - **Player**: A participant in the current game session. Has a name, a turn order index, and a running score.
-- **GameSession**: Represents one round of play. References the merged question pool, the player list, current question index, current player index, and each player's score. Exists in memory only (no persistence).
+- **GameSession**: Represents one game. References the merged question pool, the player list, configured round count, current round index, current player index, and each player's score. Total turns = rounds × player count. Exists in memory only (no persistence).
 - **Leaderboard**: The end-of-game ranking derived from the GameSession. Ordered by score descending.
 
 ---
