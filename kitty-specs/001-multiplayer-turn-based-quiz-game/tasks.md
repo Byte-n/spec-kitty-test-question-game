@@ -285,9 +285,9 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~300 lines
 
 ### Included Subtasks
-- [ ] T044 Write `src/__tests__/gameEngine.test.ts` — turn advancement, scoring, pool capping, player cycling
-- [ ] T045 Write `src/__tests__/leaderboard.test.ts` — dense ranking with ties, single player, all tied
-- [ ] T046 Write `src/__tests__/bankService.test.ts` — merge, shuffle randomness, import validation, conflict detection
+- [x] T044 Write `src/__tests__/gameEngine.test.ts` — turn advancement, scoring, pool capping, player cycling
+- [x] T045 Write `src/__tests__/leaderboard.test.ts` — dense ranking with ties, single player, all tied
+- [x] T046 Write `src/__tests__/bankService.test.ts` — merge, shuffle randomness, import validation, conflict detection
 
 ### Implementation Notes
 - No component tests (per user's selection of option B during planning)
