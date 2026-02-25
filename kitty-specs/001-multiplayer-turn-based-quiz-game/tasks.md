@@ -85,12 +85,12 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~400 lines
 
 ### Included Subtasks
-- [ ] T012 Create `src/services/gameEngine.ts` — buildQuestionPool, getCurrentPlayer, isLastTurn, applyScore
-- [ ] T013 Implement `computeLeaderboard()` — dense ranking algorithm in `src/services/gameEngine.ts`
-- [ ] T014 Create `src/stores/gameStore.ts` — Zustand store (GamePhase state machine, no persistence)
-- [ ] T015 Implement `startGame(config)` action — pool build + shuffle + session init + phase → question
-- [ ] T016 Implement `submitAnswer(optionId | null)` — correct check, score update, phase → result
-- [ ] T017 Implement `continueToNext()` + `resetGame()` + `getLeaderboard()` selector
+- [x] T012 Create `src/services/gameEngine.ts` — buildQuestionPool, getCurrentPlayer, isLastTurn, applyScore
+- [x] T013 Implement `computeLeaderboard()` — dense ranking algorithm in `src/services/gameEngine.ts`
+- [x] T014 Create `src/stores/gameStore.ts` — Zustand store (GamePhase state machine, no persistence)
+- [x] T015 Implement `startGame(config)` action — pool build + shuffle + session init + phase → question
+- [x] T016 Implement `submitAnswer(optionId | null)` — correct check, score update, phase → result
+- [x] T017 Implement `continueToNext()` + `resetGame()` + `getLeaderboard()` selector
 
 ### Implementation Notes
 - Derived values: `currentPlayer = players[currentTurnIndex % players.length]`
