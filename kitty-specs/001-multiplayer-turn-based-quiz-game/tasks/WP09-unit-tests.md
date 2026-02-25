@@ -1,9 +1,12 @@
 ---
 work_package_id: WP09
 title: Unit Tests
-lane: planned
+lane: "doing"
 dependencies:
 - WP02
+base_branch: 001-multiplayer-turn-based-quiz-game-WP02
+base_commit: 46408e730bf9ffb0663582f383efe6d119610dbd
+created_at: '2026-02-25T15:13:15.996638+00:00'
 subtasks:
 - T044
 - T045
@@ -11,7 +14,7 @@ subtasks:
 phase: Phase 3 - Polish
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "75069"
 review_status: ''
 reviewed_by: ''
 history:
