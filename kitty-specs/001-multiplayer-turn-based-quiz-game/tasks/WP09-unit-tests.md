@@ -1,7 +1,7 @@
 ---
 work_package_id: WP09
 title: Unit Tests
-lane: "doing"
+lane: "done"
 dependencies:
 - WP02
 base_branch: 001-multiplayer-turn-based-quiz-game-WP02
@@ -15,8 +15,8 @@ phase: Phase 3 - Polish
 assignee: ''
 agent: "claude"
 shell_pid: "80526"
-review_status: ''
-reviewed_by: ''
+review_status: "approved"
+reviewed_by: "xzl"
 history:
 - timestamp: '2026-02-25T00:00:00Z'
   lane: planned
@@ -507,3 +507,4 @@ export default defineConfig({
 - 2026-02-25T15:13:16Z – claude – shell_pid=75069 – lane=doing – Assigned agent via workflow command
 - 2026-02-25T15:21:50Z – claude – shell_pid=75069 – lane=for_review – Ready for review: 57 tests passing across 3 suites (gameEngine 23, bankService 25, leaderboard 9). Fixed computeLeaderboard to use dense ranking (rank += 1 not rank = i + 1).
 - 2026-02-25T23:58:19Z – claude – shell_pid=80526 – lane=doing – Started review via workflow command
+- 2026-02-25T23:59:03Z – claude – shell_pid=80526 – lane=done – Review passed: 57/57 tests passing — gameEngine (23), leaderboard dense ranking (9), bankService (25). Fixed computeLeaderboard bug (rank += 1 for dense ranking). vitest configured with jsdom + globals. All T044–T046 coverage criteria met.
