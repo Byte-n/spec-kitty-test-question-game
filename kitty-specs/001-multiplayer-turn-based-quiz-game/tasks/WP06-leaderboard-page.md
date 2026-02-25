@@ -1,25 +1,28 @@
 ---
-work_package_id: "WP06"
+work_package_id: WP06
+title: Leaderboard Page
+lane: "doing"
+dependencies: [WP03]
+base_branch: 001-multiplayer-turn-based-quiz-game-WP03
+base_commit: e75a04fa26960e77174940543d6f2f6939a38df4
+created_at: '2026-02-25T15:06:42.097139+00:00'
 subtasks:
-  - "T028"
-  - "T029"
-  - "T030"
-  - "T031"
-title: "Leaderboard Page"
-phase: "Phase 1 - Core Game Loop"
-lane: "planned"
-assignee: ""
-agent: ""
-shell_pid: ""
-review_status: ""
-reviewed_by: ""
-dependencies: ["WP03"]
+- T028
+- T029
+- T030
+- T031
+phase: Phase 1 - Core Game Loop
+assignee: ''
+agent: ''
+shell_pid: "74552"
+review_status: ''
+reviewed_by: ''
 history:
-  - timestamp: "2026-02-25T00:00:00Z"
-    lane: "planned"
-    agent: "system"
-    shell_pid: ""
-    action: "Prompt generated via /spec-kitty.tasks"
+- timestamp: '2026-02-25T00:00:00Z'
+  lane: planned
+  agent: system
+  shell_pid: ''
+  action: Prompt generated via /spec-kitty.tasks
 ---
 
 # Work Package Prompt: WP06 – Leaderboard Page
