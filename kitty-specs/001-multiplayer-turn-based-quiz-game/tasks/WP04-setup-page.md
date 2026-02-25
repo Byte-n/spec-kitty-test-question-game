@@ -1,7 +1,7 @@
 ---
 work_package_id: WP04
 title: Setup Page
-lane: "doing"
+lane: "done"
 dependencies:
 - WP02
 base_branch: 001-multiplayer-turn-based-quiz-game-WP02
@@ -17,8 +17,8 @@ phase: Phase 1 - Core Game Loop
 assignee: ''
 agent: "claude"
 shell_pid: "80035"
-review_status: ''
-reviewed_by: ''
+review_status: "approved"
+reviewed_by: "xzl"
 history:
 - timestamp: '2026-02-25T00:00:00Z'
   lane: planned
@@ -383,3 +383,4 @@ history:
 - 2026-02-25T14:56:24Z – claude – shell_pid=73999 – lane=doing – Assigned agent via workflow command
 - 2026-02-25T15:01:28Z – claude – shell_pid=73999 – lane=for_review – T018–T022 done: BankSelector with empty-bank disabled, PlayerConfig 1–12, GameConfigForm round/time, SetupPage with validation + pool warning + 管理题库 nav; gameStore stub for workspace; router updated
 - 2026-02-25T23:50:06Z – claude – shell_pid=80035 – lane=doing – Started review via workflow command
+- 2026-02-25T23:52:12Z – claude – shell_pid=80035 – lane=done – Review passed: BankSelector with disabled-empty-bank guard, PlayerConfig 1–12 with delete guard, GameConfig round/time InputNumbers, SetupPage with dual validation + non-blocking pool warning + 管理题库 nav, gameStore stub correctly typed. All T018–T022 acceptance criteria met.
