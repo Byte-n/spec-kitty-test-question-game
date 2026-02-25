@@ -1,26 +1,29 @@
 ---
-work_package_id: "WP05"
+work_package_id: WP05
+title: Game Page & Result Page
+lane: "doing"
+dependencies: [WP03]
+base_branch: 001-multiplayer-turn-based-quiz-game-WP03
+base_commit: e75a04fa26960e77174940543d6f2f6939a38df4
+created_at: '2026-02-25T15:02:13.452963+00:00'
 subtasks:
-  - "T023"
-  - "T024"
-  - "T025"
-  - "T026"
-  - "T027"
-title: "Game Page & Result Page"
-phase: "Phase 1 - Core Game Loop"
-lane: "planned"
-assignee: ""
-agent: ""
-shell_pid: ""
-review_status: ""
-reviewed_by: ""
-dependencies: ["WP03"]
+- T023
+- T024
+- T025
+- T026
+- T027
+phase: Phase 1 - Core Game Loop
+assignee: ''
+agent: ''
+shell_pid: "74288"
+review_status: ''
+reviewed_by: ''
 history:
-  - timestamp: "2026-02-25T00:00:00Z"
-    lane: "planned"
-    agent: "system"
-    shell_pid: ""
-    action: "Prompt generated via /spec-kitty.tasks"
+- timestamp: '2026-02-25T00:00:00Z'
+  lane: planned
+  agent: system
+  shell_pid: ''
+  action: Prompt generated via /spec-kitty.tasks
 ---
 
 # Work Package Prompt: WP05 – Game Page & Result Page
