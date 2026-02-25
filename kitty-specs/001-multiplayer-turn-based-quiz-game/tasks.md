@@ -20,7 +20,7 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 
 ### Included Subtasks
 - [x] T001 Install missing npm packages: `zustand`, `react-router-dom`, `postcss-pxtorem`
-- [ ] T002 Configure `postcss-pxtorem` in `postcss.config.js` (rootValue 37.5, 750px base)
+- [x] T002 Configure `postcss-pxtorem` in `postcss.config.js` (rootValue 37.5, 750px base)
 - [ ] T003 [P] Create `src/types/index.ts` with all shared TypeScript interfaces
 - [ ] T004 [P] Create `src/data/defaultBank.ts` with ≥20 built-in Chinese questions
 - [ ] T005 Create `src/router/index.tsx` — React Router v7 routes + GameGuard redirect
