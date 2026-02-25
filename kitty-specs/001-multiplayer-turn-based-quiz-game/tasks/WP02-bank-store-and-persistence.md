@@ -8,7 +8,7 @@ subtasks:
   - "T011"
 title: "Bank Store & Persistence"
 phase: "Phase 0 - Foundation"
-lane: "planned"
+lane: "for_review"
 assignee: ""
 agent: ""
 shell_pid: ""
@@ -388,3 +388,4 @@ history:
 ## Activity Log
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
+- 2026-02-25T10:24:41Z – unknown – lane=for_review – T007–T011 done: persistence helpers, bankService pure functions, bankStore with persist middleware, exportBank (Blob download), importBank (FileReader + schema validation)
