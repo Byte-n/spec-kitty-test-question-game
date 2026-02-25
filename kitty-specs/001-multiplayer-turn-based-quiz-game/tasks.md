@@ -153,11 +153,11 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~420 lines
 
 ### Included Subtasks
-- [ ] T023 Create `src/components/CountdownTimer/CountdownTimer.tsx` — `useCountdown` hook + visual ring/bar display
-- [ ] T024 [P] Create `src/components/AnswerOption/AnswerOption.tsx` — option button (normal / selected / correct / wrong states)
-- [ ] T025 [P] Create `src/components/PlayerBadge/PlayerBadge.tsx` — current player name + round indicator
-- [ ] T026 Create `src/pages/GamePage/GamePage.tsx` — wires PlayerBadge + CountdownTimer + AnswerOption list
-- [ ] T027 Create `src/pages/ResultPage/ResultPage.tsx` — answer reveal + score delta + "继续" button
+- [x] T023 Create `src/components/CountdownTimer/CountdownTimer.tsx` — `useCountdown` hook + visual ring/bar display
+- [x] T024 [P] Create `src/components/AnswerOption/AnswerOption.tsx` — option button (normal / selected / correct / wrong states)
+- [x] T025 [P] Create `src/components/PlayerBadge/PlayerBadge.tsx` — current player name + round indicator
+- [x] T026 Create `src/pages/GamePage/GamePage.tsx` — wires PlayerBadge + CountdownTimer + AnswerOption list
+- [x] T027 Create `src/pages/ResultPage/ResultPage.tsx` — answer reveal + score delta + "继续" button
 
 ### Implementation Notes
 - `useCountdown(seconds, onExpire)`: uses `setInterval` 1s tick; calls `submitAnswer(null)` on expiry; clears interval on unmount
