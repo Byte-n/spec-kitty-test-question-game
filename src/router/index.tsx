@@ -1,13 +1,13 @@
 import type { ReactNode } from 'react'
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 import { useGameStore } from '../stores/gameStore.stub'
+import BankManagerPage from '../pages/BankManagerPage/BankManagerPage'
 
-// Placeholder pages — will be replaced in WP04–WP07
+// Placeholder pages — will be replaced in WP04, WP05, WP06
 const SetupPage = () => <div style={{ padding: 24 }}>Setup Page (WP04)</div>
 const GamePage = () => <div style={{ padding: 24 }}>Game Page (WP05)</div>
 const ResultPage = () => <div style={{ padding: 24 }}>Result Page (WP05)</div>
 const LeaderboardPage = () => <div style={{ padding: 24 }}>Leaderboard Page (WP06)</div>
-const BankManagerPage = () => <div style={{ padding: 24 }}>Bank Manager Page (WP07)</div>
 
 /** Redirects to / if no active game session */
 function GameGuard({ children }: { children: ReactNode }) {
