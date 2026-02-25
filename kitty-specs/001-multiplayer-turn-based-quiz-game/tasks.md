@@ -19,7 +19,7 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~350 lines
 
 ### Included Subtasks
-- [ ] T001 Install missing npm packages: `zustand`, `react-router-dom`, `postcss-pxtorem`
+- [x] T001 Install missing npm packages: `zustand`, `react-router-dom`, `postcss-pxtorem`
 - [ ] T002 Configure `postcss-pxtorem` in `postcss.config.js` (rootValue 37.5, 750px base)
 - [ ] T003 [P] Create `src/types/index.ts` with all shared TypeScript interfaces
 - [ ] T004 [P] Create `src/data/defaultBank.ts` with ≥20 built-in Chinese questions
