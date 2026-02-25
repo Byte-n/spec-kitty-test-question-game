@@ -186,10 +186,10 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~280 lines
 
 ### Included Subtasks
-- [ ] T028 Create `src/components/Leaderboard/Leaderboard.tsx` — ranked list with medal icons for rank 1/2/3
-- [ ] T029 Create `src/pages/LeaderboardPage/LeaderboardPage.tsx` — full leaderboard screen + "再玩一局" button
-- [ ] T030 Add rank reveal animation (staggered entrance, bottom-up) using CSS transition
-- [ ] T031 Implement "再玩一局" flow: `resetGame()` → navigate to `/`
+- [x] T028 Create `src/components/Leaderboard/Leaderboard.tsx` — ranked list with medal icons for rank 1/2/3
+- [x] T029 Create `src/pages/LeaderboardPage/LeaderboardPage.tsx` — full leaderboard screen + "再玩一局" button
+- [x] T030 Add rank reveal animation (staggered entrance, bottom-up) using CSS transition
+- [x] T031 Implement "再玩一局" flow: `resetGame()` → navigate to `/`
 
 ### Implementation Notes
 - Dense ranking: rendered from `gameStore.getLeaderboard()` (already computed in store)
