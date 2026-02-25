@@ -14,7 +14,7 @@ subtasks:
 - T027
 phase: Phase 1 - Core Game Loop
 assignee: ''
-agent: ''
+agent: "claude"
 shell_pid: "74288"
 review_status: ''
 reviewed_by: ''
@@ -437,3 +437,4 @@ history:
 ## Activity Log
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
+- 2026-02-25T15:02:13Z – claude – shell_pid=74288 – lane=doing – Assigned agent via workflow command
