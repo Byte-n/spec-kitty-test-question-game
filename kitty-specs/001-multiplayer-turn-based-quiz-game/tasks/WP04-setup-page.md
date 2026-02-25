@@ -1,7 +1,7 @@
 ---
 work_package_id: WP04
 title: Setup Page
-lane: "doing"
+lane: "for_review"
 dependencies:
 - WP02
 base_branch: 001-multiplayer-turn-based-quiz-game-WP02
@@ -381,3 +381,4 @@ history:
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-25T14:56:24Z – claude – shell_pid=73999 – lane=doing – Assigned agent via workflow command
+- 2026-02-25T15:01:28Z – claude – shell_pid=73999 – lane=for_review – T018–T022 done: BankSelector with empty-bank disabled, PlayerConfig 1–12, GameConfigForm round/time, SetupPage with validation + pool warning + 管理题库 nav; gameStore stub for workspace; router updated
