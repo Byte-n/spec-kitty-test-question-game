@@ -8,12 +8,12 @@ subtasks:
   - "T011"
 title: "Bank Store & Persistence"
 phase: "Phase 0 - Foundation"
-lane: "doing"
+lane: "done"
 assignee: ""
 agent: "claude"
 shell_pid: "70636"
-review_status: ""
-reviewed_by: ""
+review_status: "approved"
+reviewed_by: "xzl"
 dependencies: ["WP01"]
 history:
   - timestamp: "2026-02-25T00:00:00Z"
@@ -390,3 +390,4 @@ history:
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-25T10:24:41Z – unknown – lane=for_review – T007–T011 done: persistence helpers, bankService pure functions, bankStore with persist middleware, exportBank (Blob download), importBank (FileReader + schema validation)
 - 2026-02-25T10:29:04Z – claude – shell_pid=70636 – lane=doing – Started review via workflow command
+- 2026-02-25T10:32:07Z – claude – shell_pid=70636 – lane=done – Review passed: persistence helpers correct, bankService pure functions clean (Fisher-Yates, validation, import conversion), bankStore persist config matches spec (key/version/partialize), export/import fully implemented with proper cleanup and conflict resolution
