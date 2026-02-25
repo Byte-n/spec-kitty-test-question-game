@@ -8,10 +8,10 @@ subtasks:
   - "T011"
 title: "Bank Store & Persistence"
 phase: "Phase 0 - Foundation"
-lane: "for_review"
+lane: "doing"
 assignee: ""
-agent: ""
-shell_pid: ""
+agent: "claude"
+shell_pid: "70636"
 review_status: ""
 reviewed_by: ""
 dependencies: ["WP01"]
@@ -389,3 +389,4 @@ history:
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-25T10:24:41Z – unknown – lane=for_review – T007–T011 done: persistence helpers, bankService pure functions, bankStore with persist middleware, exportBank (Blob download), importBank (FileReader + schema validation)
+- 2026-02-25T10:29:04Z – claude – shell_pid=70636 – lane=doing – Started review via workflow command
