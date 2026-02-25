@@ -1,7 +1,7 @@
 ---
 work_package_id: WP06
 title: Leaderboard Page
-lane: "doing"
+lane: "for_review"
 dependencies: [WP03]
 base_branch: 001-multiplayer-turn-based-quiz-game-WP03
 base_commit: e75a04fa26960e77174940543d6f2f6939a38df4
@@ -239,3 +239,4 @@ history:
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-25T15:06:42Z – claude – shell_pid=74552 – lane=doing – Assigned agent via workflow command
+- 2026-02-25T15:09:29Z – claude – shell_pid=74552 – lane=for_review – T028–T031 done: Leaderboard component with medals+staggered animation, LeaderboardPage with trophy + 再玩一局 reset flow, fadeInUp keyframe in global.css, router updated
