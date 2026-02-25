@@ -217,12 +217,12 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~450 lines
 
 ### Included Subtasks
-- [ ] T032 [P] Create `src/pages/BankManagerPage/BankList.tsx` — list banks with create/delete/export/import actions
-- [ ] T033 [P] Create `src/pages/BankManagerPage/BankEditor.tsx` — question list + inline add/edit form
-- [ ] T034 Create `src/pages/BankManagerPage/BankManagerPage.tsx` — composes BankList + BankEditor with selected bank state
-- [ ] T035 Implement question form — text field, 2-4 option inputs (dynamic add/remove), correct-answer radio
-- [ ] T036 Implement delete confirmation modal (Ant Design `Modal.confirm`) for both bank and question deletion
-- [ ] T037 Wire export button (call `bankStore.exportBank`) + import file input (`<input type="file" accept=".json">`)
+- [x] T032 [P] Create `src/pages/BankManagerPage/BankList.tsx` — list banks with create/delete/export/import actions
+- [x] T033 [P] Create `src/pages/BankManagerPage/BankEditor.tsx` — question list + inline add/edit form
+- [x] T034 Create `src/pages/BankManagerPage/BankManagerPage.tsx` — composes BankList + BankEditor with selected bank state
+- [x] T035 Implement question form — text field, 2-4 option inputs (dynamic add/remove), correct-answer radio
+- [x] T036 Implement delete confirmation modal (Ant Design `Modal.confirm`) for both bank and question deletion
+- [x] T037 Wire export button (call `bankStore.exportBank`) + import file input (`<input type="file" accept=".json">`)
 
 ### Implementation Notes
 - BankList: built-in bank shows "(内置)" badge, no delete/edit buttons; custom banks fully editable
