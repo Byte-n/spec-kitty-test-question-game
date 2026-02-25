@@ -52,11 +52,11 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~380 lines
 
 ### Included Subtasks
-- [ ] T007 Create `src/services/persistence.ts` — typed localStorage read/write helpers
-- [ ] T008 Create `src/services/bankService.ts` — getMergedQuestions, shuffleArray, validateImportSchema
-- [ ] T009 Create `src/stores/bankStore.ts` — Zustand store with persist middleware (CRUD actions)
-- [ ] T010 Implement `exportBank()` — Blob + `URL.createObjectURL()` file download
-- [ ] T011 Implement `importBank()` — FileReader + JSON parse + schema validation + conflict handling
+- [x] T007 Create `src/services/persistence.ts` — typed localStorage read/write helpers
+- [x] T008 Create `src/services/bankService.ts` — getMergedQuestions, shuffleArray, validateImportSchema
+- [x] T009 Create `src/stores/bankStore.ts` — Zustand store with persist middleware (CRUD actions)
+- [x] T010 Implement `exportBank()` — Blob + `URL.createObjectURL()` file download
+- [x] T011 Implement `importBank()` — FileReader + JSON parse + schema validation + conflict handling
 
 ### Implementation Notes
 - Zustand persist key: `"quiz-game-banks"`, version: 1
