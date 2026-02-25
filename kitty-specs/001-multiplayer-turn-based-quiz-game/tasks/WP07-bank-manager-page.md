@@ -15,7 +15,7 @@ subtasks:
 - T037
 phase: Phase 2 - Custom Question Banks
 assignee: ''
-agent: ''
+agent: "claude"
 shell_pid: "74812"
 review_status: ''
 reviewed_by: ''
@@ -496,3 +496,4 @@ history:
 ## Activity Log
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
+- 2026-02-25T15:09:41Z – claude – shell_pid=74812 – lane=doing – Assigned agent via workflow command
