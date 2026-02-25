@@ -1,7 +1,7 @@
 ---
 work_package_id: WP03
 title: Game Engine & Game Store
-lane: "doing"
+lane: "for_review"
 dependencies: [WP01]
 base_branch: 001-multiplayer-turn-based-quiz-game-WP01
 base_commit: a059aa63f7b6540bd41ed1b98581e728c44e777e
@@ -349,3 +349,4 @@ history:
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-25T10:25:39Z – claude – shell_pid=70337 – lane=doing – Assigned agent via workflow command
+- 2026-02-25T10:28:41Z – claude – shell_pid=70337 – lane=for_review – T012–T017 done: gameEngine pure functions (pool builder, player/round/question helpers, dense leaderboard), gameStore state machine (startGame/submitAnswer/continueToNext/resetGame/getLeaderboard), router updated to use real store
