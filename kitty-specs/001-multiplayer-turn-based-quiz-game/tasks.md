@@ -120,11 +120,11 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~370 lines
 
 ### Included Subtasks
-- [ ] T018 [P] Create `src/pages/SetupPage/BankSelector.tsx` — multi-checkbox with combined question count display
-- [ ] T019 [P] Create `src/pages/SetupPage/PlayerConfig.tsx` — dynamic list of 1–12 player name inputs
-- [ ] T020 [P] Create `src/pages/SetupPage/GameConfig.tsx` — round count input (min 1) + time limit input (default 30s)
-- [ ] T021 Create `src/pages/SetupPage/SetupPage.tsx` — composes all sub-components; validates & calls `startGame()`
-- [ ] T022 Add "管理题库" navigation link to `/banks` from setup page header
+- [x] T018 [P] Create `src/pages/SetupPage/BankSelector.tsx` — multi-checkbox with combined question count display
+- [x] T019 [P] Create `src/pages/SetupPage/PlayerConfig.tsx` — dynamic list of 1–12 player name inputs
+- [x] T020 [P] Create `src/pages/SetupPage/GameConfig.tsx` — round count input (min 1) + time limit input (default 30s)
+- [x] T021 Create `src/pages/SetupPage/SetupPage.tsx` — composes all sub-components; validates & calls `startGame()`
+- [x] T022 Add "管理题库" navigation link to `/banks` from setup page header
 
 ### Implementation Notes
 - BankSelector: uses `bankStore.getAllBanks()`; show bank name + question count; built-in bank shown first (read-only badge)
