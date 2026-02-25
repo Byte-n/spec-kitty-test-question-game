@@ -1,7 +1,7 @@
 ---
 work_package_id: WP05
 title: Game Page & Result Page
-lane: "for_review"
+lane: "doing"
 dependencies: [WP03]
 base_branch: 001-multiplayer-turn-based-quiz-game-WP03
 base_commit: e75a04fa26960e77174940543d6f2f6939a38df4
@@ -15,7 +15,7 @@ subtasks:
 phase: Phase 1 - Core Game Loop
 assignee: ''
 agent: "claude"
-shell_pid: "74288"
+shell_pid: "80148"
 review_status: ''
 reviewed_by: ''
 history:
@@ -439,3 +439,4 @@ history:
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-25T15:02:13Z – claude – shell_pid=74288 – lane=doing – Assigned agent via workflow command
 - 2026-02-25T15:05:59Z – claude – shell_pid=74288 – lane=for_review – T023–T027 done: CountdownTimer (useRef stable callback, color stages), AnswerOption (4 states, 44px touch), PlayerBadge (name+round), GamePage (double-submit guard), ResultPage (wasLastTurn before continueToNext, verdict + revealed options)
+- 2026-02-25T23:52:17Z – claude – shell_pid=80148 – lane=doing – Started review via workflow command
