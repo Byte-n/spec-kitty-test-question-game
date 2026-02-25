@@ -1,7 +1,7 @@
 ---
 work_package_id: WP07
 title: Bank Manager Page
-lane: "for_review"
+lane: "doing"
 dependencies: [WP02]
 base_branch: 001-multiplayer-turn-based-quiz-game-WP02
 base_commit: 46408e730bf9ffb0663582f383efe6d119610dbd
@@ -16,7 +16,7 @@ subtasks:
 phase: Phase 2 - Custom Question Banks
 assignee: ''
 agent: "claude"
-shell_pid: "74812"
+shell_pid: "80425"
 review_status: ''
 reviewed_by: ''
 history:
@@ -498,3 +498,4 @@ history:
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-25T15:09:41Z – claude – shell_pid=74812 – lane=doing – Assigned agent via workflow command
 - 2026-02-25T15:12:44Z – claude – shell_pid=74812 – lane=for_review – T032–T037 done: BankList (create/export/import with file reset), BankEditor (inline QuestionForm, read-only for builtin), BankManagerPage (Modal.confirm deletions, two-column layout), QuestionForm (add/edit, dynamic options, validation)
+- 2026-02-25T23:56:52Z – claude – shell_pid=80425 – lane=doing – Started review via workflow command
