@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { createBrowserRouter, Navigate } from 'react-router-dom'
-import { useGameStore } from '../stores/gameStore.stub'
+import { useGameStore } from '../stores/gameStore'
 
 // Placeholder pages — will be replaced in WP04–WP07
 const SetupPage = () => <div style={{ padding: 24 }}>Setup Page (WP04)</div>
