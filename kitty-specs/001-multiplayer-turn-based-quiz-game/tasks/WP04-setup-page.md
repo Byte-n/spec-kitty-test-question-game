@@ -1,9 +1,12 @@
 ---
 work_package_id: WP04
 title: Setup Page
-lane: planned
+lane: "doing"
 dependencies:
 - WP02
+base_branch: 001-multiplayer-turn-based-quiz-game-WP02
+base_commit: 46408e730bf9ffb0663582f383efe6d119610dbd
+created_at: '2026-02-25T14:56:24.814845+00:00'
 subtasks:
 - T018
 - T019
@@ -13,7 +16,7 @@ subtasks:
 phase: Phase 1 - Core Game Loop
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "73999"
 review_status: ''
 reviewed_by: ''
 history:
