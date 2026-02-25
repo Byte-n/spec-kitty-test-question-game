@@ -1,2 +1,28 @@
 # Default ignored files
 .idea
+
+# Node
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Added by Spec Kitty CLI (auto-managed)
+.claude/
+.codex/
+.opencode/
+.windsurf/
+.gemini/
+.cursor/
+.qwen/
+.kilocode/
+.augment/
+.roo/
+.amazonq/
+.github/copilot/
+.kittify/.dashboard
