@@ -1,27 +1,30 @@
 ---
-work_package_id: "WP07"
+work_package_id: WP07
+title: Bank Manager Page
+lane: "doing"
+dependencies: [WP02]
+base_branch: 001-multiplayer-turn-based-quiz-game-WP02
+base_commit: 46408e730bf9ffb0663582f383efe6d119610dbd
+created_at: '2026-02-25T15:09:41.827587+00:00'
 subtasks:
-  - "T032"
-  - "T033"
-  - "T034"
-  - "T035"
-  - "T036"
-  - "T037"
-title: "Bank Manager Page"
-phase: "Phase 2 - Custom Question Banks"
-lane: "planned"
-assignee: ""
-agent: ""
-shell_pid: ""
-review_status: ""
-reviewed_by: ""
-dependencies: ["WP02"]
+- T032
+- T033
+- T034
+- T035
+- T036
+- T037
+phase: Phase 2 - Custom Question Banks
+assignee: ''
+agent: ''
+shell_pid: "74812"
+review_status: ''
+reviewed_by: ''
 history:
-  - timestamp: "2026-02-25T00:00:00Z"
-    lane: "planned"
-    agent: "system"
-    shell_pid: ""
-    action: "Prompt generated via /spec-kitty.tasks"
+- timestamp: '2026-02-25T00:00:00Z'
+  lane: planned
+  agent: system
+  shell_pid: ''
+  action: Prompt generated via /spec-kitty.tasks
 ---
 
 # Work Package Prompt: WP07 – Bank Manager Page
