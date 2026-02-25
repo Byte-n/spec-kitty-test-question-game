@@ -1,7 +1,7 @@
 ---
 work_package_id: WP09
 title: Unit Tests
-lane: "doing"
+lane: "for_review"
 dependencies:
 - WP02
 base_branch: 001-multiplayer-turn-based-quiz-game-WP02
@@ -505,3 +505,4 @@ export default defineConfig({
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-25T15:13:16Z – claude – shell_pid=75069 – lane=doing – Assigned agent via workflow command
+- 2026-02-25T15:21:50Z – claude – shell_pid=75069 – lane=for_review – Ready for review: 57 tests passing across 3 suites (gameEngine 23, bankService 25, leaderboard 9). Fixed computeLeaderboard to use dense ranking (rank += 1 not rank = i + 1).
