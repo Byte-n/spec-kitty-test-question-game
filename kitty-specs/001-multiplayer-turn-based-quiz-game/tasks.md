@@ -24,7 +24,7 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 - [x] T003 [P] Create `src/types/index.ts` with all shared TypeScript interfaces
 - [x] T004 [P] Create `src/data/defaultBank.ts` with ≥20 built-in Chinese questions
 - [x] T005 Create `src/router/index.tsx` — React Router v7 routes + GameGuard redirect
-- [ ] T006 Update `src/App.tsx` to integrate Router provider
+- [x] T006 Update `src/App.tsx` to integrate Router provider
 
 ### Implementation Notes
 - Run `npm install zustand react-router-dom` then `npm install --save-dev postcss-pxtorem`
