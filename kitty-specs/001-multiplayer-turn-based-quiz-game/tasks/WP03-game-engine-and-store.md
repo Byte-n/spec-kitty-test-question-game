@@ -1,27 +1,30 @@
 ---
-work_package_id: "WP03"
+work_package_id: WP03
+title: Game Engine & Game Store
+lane: "doing"
+dependencies: [WP01]
+base_branch: 001-multiplayer-turn-based-quiz-game-WP01
+base_commit: a059aa63f7b6540bd41ed1b98581e728c44e777e
+created_at: '2026-02-25T10:25:39.503042+00:00'
 subtasks:
-  - "T012"
-  - "T013"
-  - "T014"
-  - "T015"
-  - "T016"
-  - "T017"
-title: "Game Engine & Game Store"
-phase: "Phase 0 - Foundation"
-lane: "planned"
-assignee: ""
-agent: ""
-shell_pid: ""
-review_status: ""
-reviewed_by: ""
-dependencies: ["WP01"]
+- T012
+- T013
+- T014
+- T015
+- T016
+- T017
+phase: Phase 0 - Foundation
+assignee: ''
+agent: ''
+shell_pid: "70337"
+review_status: ''
+reviewed_by: ''
 history:
-  - timestamp: "2026-02-25T00:00:00Z"
-    lane: "planned"
-    agent: "system"
-    shell_pid: ""
-    action: "Prompt generated via /spec-kitty.tasks"
+- timestamp: '2026-02-25T00:00:00Z'
+  lane: planned
+  agent: system
+  shell_pid: ''
+  action: Prompt generated via /spec-kitty.tasks
 ---
 
 # Work Package Prompt: WP03 – Game Engine & Game Store
