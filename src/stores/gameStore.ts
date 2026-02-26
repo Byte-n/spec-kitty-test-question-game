@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import type { GameConfig, GamePhase, GameSession, RankedPlayer } from '../types'
-import { useBankStore } from './bankStore.stub'
+import { useBankStore } from './bankStore'
 import {
   buildQuestionPool,
   getCurrentPlayer,

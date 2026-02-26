@@ -35,9 +35,9 @@ interface BankStoreActions {
 export const useBankStore = create<BankStoreState & BankStoreActions>()(
   persist(
     (set, get) => ({
-      customBanks: [],
+      customBanks: [DEFAULT_BANK],
 
-      getAllBanks: () => [DEFAULT_BANK, ...get().customBanks],
+      getAllBanks: () => get().customBanks,
 
       createBank: (name) => {
         const newBank: QuestionBank = {
