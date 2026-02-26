@@ -62,11 +62,10 @@ export default function BankManagerPage() {
         </Typography.Title>
       </Flex>
 
-      {/* Content */}
-      <Flex style={{ flex: 1, overflow: 'hidden' }}>
+      {/* Content — stacks vertically on mobile, side-by-side on md+ */}
+      <div className="flex flex-col md:flex-row" style={{ flex: 1, overflow: 'hidden' }}>
         <div
-          className="border-r border-gray-200 overflow-y-auto p-4"
-          style={{ flexShrink: 0 }}
+          className="border-b border-gray-200 md:border-b-0 md:border-r overflow-y-auto p-4 w-full md:w-60 shrink-0"
         >
           <BankList
             selectedBankId={selectedBankId}
@@ -84,7 +83,8 @@ export default function BankManagerPage() {
             <Typography.Text type="secondary">请选择一个题库</Typography.Text>
           )}
         </div>
-      </Flex>
+      </div>
     </Flex>
   )
 }
+

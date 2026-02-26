@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import { notification } from 'antd'
 import { DEFAULT_BANK } from '../data/defaultBank'
 import {
   getMergedQuestions as mergeQuestions,
@@ -170,6 +171,22 @@ export const useBankStore = create<BankStoreState & BankStoreActions>()(
       name: 'quiz-game-banks',
       version: 1,
       partialize: state => ({ customBanks: state.customBanks }),
+      storage: {
+        getItem: (name) => localStorage.getItem(name),
+        setItem: (name, value) => {
+          try {
+            localStorage.setItem(name, value)
+          } catch (e) {
+            if (e instanceof DOMException && e.name === 'QuotaExceededError') {
+              notification.error({
+                message: '存储空间不足',
+                description: '本地存储空间已满，无法保存新的题库数据。请删除部分题库后重试。',
+              })
+            }
+          }
+        },
+        removeItem: (name) => localStorage.removeItem(name),
+      },
     },
   ),
 )

@@ -40,7 +40,7 @@ export default function BankList({ selectedBankId, onSelect, onDeleteRequest }: 
   }
 
   return (
-    <Flex vertical gap={12} style={{ width: 220, flexShrink: 0 }}>
+    <Flex vertical gap={12}>
       <Flex justify="space-between" align="center">
         <Typography.Text strong>题库列表</Typography.Text>
         <Button icon={<PlusOutlined />} size="small" onClick={handleCreate}>
@@ -79,6 +79,7 @@ export default function BankList({ selectedBankId, onSelect, onDeleteRequest }: 
                       type="text"
                       size="small"
                       icon={<ExportOutlined />}
+                      className="w-11 h-11 flex items-center justify-center"
                       onClick={e => {
                         e.stopPropagation()
                         exportBank(bank.id)
@@ -89,6 +90,7 @@ export default function BankList({ selectedBankId, onSelect, onDeleteRequest }: 
                       type="text"
                       size="small"
                       danger
+                      className="min-h-[44px] px-2"
                       onClick={e => {
                         e.stopPropagation()
                         onDeleteRequest(bank)
@@ -103,6 +105,7 @@ export default function BankList({ selectedBankId, onSelect, onDeleteRequest }: 
                       type="text"
                       size="small"
                       icon={<ExportOutlined />}
+                      className="w-11 h-11 flex items-center justify-center"
                       onClick={e => {
                         e.stopPropagation()
                         exportBank(bank.id)
