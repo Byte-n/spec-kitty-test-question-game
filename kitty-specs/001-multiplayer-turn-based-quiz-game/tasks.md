@@ -251,12 +251,12 @@ description: "Work package task list for 001-multiplayer-turn-based-quiz-game"
 **Estimated size**: ~380 lines
 
 ### Included Subtasks
-- [ ] T038 Audit + fix mobile layouts (320–480px) for SetupPage, GamePage, ResultPage, LeaderboardPage, BankManagerPage
-- [ ] T039 Audit + fix tablet/desktop layouts (481px+) — efficient use of wider screens
-- [ ] T040 Enforce 44×44px minimum touch targets on all buttons and answer options
-- [ ] T041 Add empty/zero-state UI (no banks selected, empty bank, single-player mode notice)
-- [ ] T042 Add error state handling (import failure toast, localStorage quota warning)
-- [ ] T043 Manual verification of SC-001 through SC-006 acceptance criteria
+- [x] T038 Audit + fix mobile layouts (320–480px) for SetupPage, GamePage, ResultPage, LeaderboardPage, BankManagerPage
+- [x] T039 Audit + fix tablet/desktop layouts (481px+) — efficient use of wider screens
+- [x] T040 Enforce 44×44px minimum touch targets on all buttons and answer options
+- [x] T041 Add empty/zero-state UI (no banks selected, empty bank, single-player mode notice)
+- [x] T042 Add error state handling (import failure toast, localStorage quota warning)
+- [x] T043 Manual verification of SC-001 through SC-006 acceptance criteria
 
 ### Implementation Notes
 - Use Tailwind responsive prefixes: `sm:` (640px), `md:` (768px), `lg:` (1024px)
