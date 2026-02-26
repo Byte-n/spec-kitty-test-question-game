@@ -57,7 +57,7 @@ export function computeLeaderboard(session: GameSession): RankedPlayer[] {
   let rank = 1
   return sorted.map((player, i) => {
     if (i > 0 && (scores[player.id] ?? 0) < (scores[sorted[i - 1].id] ?? 0)) {
-      rank = i + 1
+      rank += 1
     }
     return {
       ...player,
