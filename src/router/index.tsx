@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createHashRouter, Navigate } from 'react-router-dom'
 import { useGameStore } from '../stores/gameStore'
 import SetupPage from '../pages/SetupPage/SetupPage'
 import GamePage from '../pages/GamePage/GamePage'
@@ -21,7 +21,7 @@ function FinishedGuard({ children }: { children: ReactNode }) {
   return <>{children}</>
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <SetupPage />,
