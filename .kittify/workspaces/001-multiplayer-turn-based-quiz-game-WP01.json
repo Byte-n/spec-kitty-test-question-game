@@ -1,0 +1,12 @@
+{
+  "wp_id": "WP01",
+  "feature_slug": "001-multiplayer-turn-based-quiz-game",
+  "worktree_path": ".worktrees/001-multiplayer-turn-based-quiz-game-WP01",
+  "branch_name": "001-multiplayer-turn-based-quiz-game-WP01",
+  "base_branch": "main",
+  "base_commit": "fe01bb59b94dfb5f06e99004d632da8bb62e1a36",
+  "dependencies": [],
+  "created_at": "2026-02-25T10:07:31.831060+00:00",
+  "created_by": "implement-command",
+  "vcs_backend": "git"
+}
