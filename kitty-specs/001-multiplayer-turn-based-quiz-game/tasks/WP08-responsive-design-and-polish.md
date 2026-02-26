@@ -15,7 +15,7 @@ subtasks:
 - T043
 phase: Phase 3 - Polish
 assignee: ''
-agent: ''
+agent: "claude"
 shell_pid: "80938"
 review_status: ''
 reviewed_by: ''
@@ -293,3 +293,4 @@ history:
 ## Activity Log
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
+- 2026-02-26T00:18:49Z – claude – shell_pid=80938 – lane=doing – Assigned agent via workflow command
