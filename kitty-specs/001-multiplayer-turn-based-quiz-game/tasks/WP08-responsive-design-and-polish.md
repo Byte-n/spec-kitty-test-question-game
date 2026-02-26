@@ -1,7 +1,7 @@
 ---
 work_package_id: WP08
 title: Responsive Design & Polish
-lane: "doing"
+lane: "for_review"
 dependencies: [WP04, WP05, WP06, WP07]
 base_branch: 001-multiplayer-turn-based-quiz-game-WP07
 base_commit: cf9cc4ef3ab1ffffa8bf6420fb48509c97b14e51
@@ -294,3 +294,4 @@ history:
 
 - 2026-02-25T00:00:00Z – system – lane=planned – Prompt created.
 - 2026-02-26T00:18:49Z – claude – shell_pid=80938 – lane=doing – Assigned agent via workflow command
+- 2026-02-26T00:28:53Z – claude – shell_pid=80938 – lane=for_review – Ready for review: merged all page WPs (SetupPage/GamePage/ResultPage/LeaderboardPage) into WP07 base; responsive BankManagerPage (flex-col mobile → flex-row md+); GamePage options 2×2 grid on md+; PlayerBadge wrap; 44px touch targets on delete/export buttons; BankSelector empty-state Alert; solo mode tag; bankStore QuotaExceededError notification; .touchTarget CSS utility; tsc --noEmit clean.
