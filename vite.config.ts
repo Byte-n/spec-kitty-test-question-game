@@ -9,7 +9,7 @@ export default defineConfig({
     globals: true,
   },
   plugins: [react()],
-  publicPath: process.env.NODE_ENV === 'production' ? '/spec-kitty-test-question-game' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/spec-kitty-test-question-game' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
