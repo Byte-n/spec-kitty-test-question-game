@@ -3,6 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Leaderboard staggered entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Minimum 44px touch target utility (SC-005, FR-022) */
+.touchTarget {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* 全局基础样式 */
 *,
 *::before,
